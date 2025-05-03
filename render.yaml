@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: playai-preview-bot
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    autoDeploy: true
