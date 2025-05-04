@@ -9,7 +9,13 @@ from handlers.handle_preview import router as preview_router
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-bot = Bot(token=BOT_TOKEN, parse_mode=ParseMode.MARKDOWN)
+from aiogram.client.default import DefaultBotProperties
+
+bot = Bot(
+    token=BOT_TOKEN,
+    default=DefaultBotProperties(parse_mode=ParseMode.MARKDOWN)
+)
+
 dp = Dispatcher(storage=MemoryStorage())
 dp.include_router(preview_router)
 
