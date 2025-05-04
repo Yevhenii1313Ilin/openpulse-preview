@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 from dotenv import load_dotenv
-from handle_preview import router as preview_router
+from handlers.handle_preview import router as preview_router
 
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
