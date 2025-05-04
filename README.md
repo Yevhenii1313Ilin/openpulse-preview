@@ -1,4 +1,8 @@
 # OpenPulse Developer Preview
+## 📄 Presentations
+
+- 🇬🇧 [English Preview (PDF)](OpenPulse_English_Preview.pdf)
+- 🇷🇺 [Russian Version (PDF)](OpenPulse_5Slides_Presentation.pdf)
 
 This page provides a community-first preview of the OpenPulse open-weight model concept.
 
